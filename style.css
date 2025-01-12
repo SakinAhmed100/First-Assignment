@@ -5,16 +5,39 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: "Fira Sans", sans-serif;
-  background-color:  white;
+.btn-primary {
+  background-color: #006a50;
+  color: #ffffff;
+  padding: 15px 20px;
+  border: 1px solid #006a50;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 18px;
+  transition: all linear 0.3s;
+  margin: 10px 0;
+}
 
+.description {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: rgb(14, 14, 14, 0.5);
+  margin: 7px 0;
+}
+
+.subtitle {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+body {
+  font-family: 'Fira Sans', sans-serif;
+  background-color: #f5f5f5;
 }
 
 .container {
   max-width: 1240px;
   margin: 0 auto;
-  
 }
 
 .menu {
@@ -28,28 +51,28 @@ body {
   font-weight: 700;
 }
 
- .menu .btn {
- background-color: #006A50;
+.menu .btn {
+  background-color: #006a50;
   padding: 15px 20px;
-  border: 1px solid #006A50;
+  border: 1px solid #006a50;
   border-radius: 8px;
- font-weight: 600;
+  font-weight: 600;
   font-size: 18px;
   transition: all linear 0.3s;
   background: transparent;
 }
 
 .menu .btn:hover {
-  background: #006A50;
+  background: #006a50;
   color: white;
-  border: 1px solid #006A50;
+  border: 1px solid #006a50;
 }
 
 .banner {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #C6E4D6;
+  background: #c6e4d6;
   border-radius: 24px;
   padding: 40px;
 }
@@ -59,7 +82,6 @@ body {
   font-size: 24px;
   font-weight: 500;
   margin-bottom: 20px;
-
 }
 
 .banner h1 {
@@ -67,23 +89,22 @@ body {
   font-size: 56px;
   font-weight: 700;
   margin-bottom: 20px;
-
 }
 
-.banner .btn {
-  background-color: #006A50;
+.btn {
+  background-color: #006a50;
   padding: 15px 20px;
-  border: 1px solid #006A50;
+  border: 1px solid #006a50;
   border-radius: 8px;
- font-weight: 600;
+  font-weight: 600;
   font-size: 18px;
   transition: all linear 0.3s;
 }
 
-.banner .btn:hover {
-  background: #006A50;
+.btn:hover {
+  background: #006a50;
   color: white;
-  border: 1px solid #006A50;
+  border: 1px solid #006a50;
 }
 
 #donate {
@@ -91,28 +112,35 @@ body {
   text-align: center;
 }
 
-
 .card-container {
   display: flex;
   justify-content: space-between;
   margin: 20px 0px;
-  ;
-
 }
 
-.card {
+.card-container h3 {
   padding: 40px;
-  background-color: #C6E4D6;
-  border-radius: 8px;
-  
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(14, 14, 14, 0.15);
+  border-radius: 16px;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.card-container h3:hover {
+  background-color: rgb(198, 228, 214);
+}
+
+.card-container h3:nth-child(2) {
+  background-color: rgb(198, 228, 214);
 }
 
 #donate .btn {
-  background-color: #006A50;
+  background-color: #006a50;
   padding: 15px 20px;
-  border: 1px solid #006A50;
+  border: 1px solid #006a50;
   border-radius: 8px;
- font-weight: 600;
+  font-weight: 600;
   font-size: 18px;
   transition: all linear 0.3s;
   margin-top: 20px;
@@ -126,6 +154,162 @@ body {
   border-radius: 8px;
   font-size: 20px;
   font-weight: 500;
-  
 }
-  
+
+.card-container2 {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 20px 0px;
+}
+
+.card2 {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 16px;
+}
+
+.pillar {
+  margin: 40px 0;
+}
+
+#card1 {
+  background-color: rgb(84, 144, 245, 0.2);
+}
+
+#card2 {
+  background-color: rgb(198, 228, 214);
+}
+
+#card3 {
+  background-color: rgb(247, 235, 207);
+}
+
+#card1-btn {
+  border-radius: 8px;
+  background: rgb(84, 144, 245);
+  border: none;
+}
+#card2-btn {
+  border-radius: 8px;
+  background: rgb(9, 161, 92);
+  border: none;
+}
+#card3-btn {
+  border-radius: 8px;
+  background: rgb(255, 194, 57);
+  border: none;
+}
+
+.Yunus {
+  background-color: #ffffff;
+  border-radius: 14px;
+  background-image: url('/assets/quote-bg.png');
+  background-repeat: no-repeat;
+  background-position: left 40px top 20px;
+  padding: 40px;
+  border: 1px solid rgb(14, 14, 14, 0.15);
+  margin: 20px 0;
+}
+
+.center {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 30px;
+  margin-top: 30px;
+  border-radius: 16px;
+}
+.date-time {
+  display: flex;
+  gap: 10px;
+}
+
+.center img {
+  border-radius: 24px;
+}
+
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+  border-radius: 24px;
+  background: rgb(198, 228, 214);
+  padding: 40px 20px;
+}
+.newsletter h2 {
+  margin-bottom: 16px;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 48px;
+}
+.newsletter p {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.subscribe-container {
+  text-align: center;
+  padding: 20px;
+  border-radius: 5px;
+}
+.subscribe-box {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.subscribe-box-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 600px;
+  margin: 0 auto;
+}
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+  font-size: 14px;
+}
+
+.button {
+  padding: 8px 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.button:hover {
+  background-color: #45a049;
+}
+small {
+  display: block;
+  margin-top: 25px;
+  color: #666;
+  font-size: 12px;
+}
+/* footer section start */
+footer {
+  text-align: center;
+  margin: 10px;
+  padding: 40px;
+  background: rgb(255, 255, 255);
+}
+footer hr {
+  margin: 20px 0;
+  border: 1px solid rgba(14, 14, 14, 0.1);
+}
+.footer-links i {
+  margin-left: 15px;
+  font-size: 20px;
+}
+/* footer section end */
